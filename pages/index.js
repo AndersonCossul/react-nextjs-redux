@@ -1,4 +1,5 @@
 import Page from '../components/page'
+import { connect } from 'react-redux';
 
 const index = () => (
   <div>
@@ -10,4 +11,4 @@ const index = () => (
   </div>
 )
 
-export default Page(index)
+export default Page(connect(state=>state)(index))
